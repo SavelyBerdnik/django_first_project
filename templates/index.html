@@ -1,0 +1,10 @@
+{% extends 'base.html' %}  <!-- Наследование шаблона base.html -->
+
+{% block title%}Тайтл Индекс {% endblock %}  <!-- Переопределение шаблона -->
+
+{% block content %}
+<h2>Данные из index.html</h2>
+
+{% include 'index_old.html' %}  <!-- Подключение другого кода -->
+{% endblock %}  # блок контента, который будет обёрнут в шаблон
+
