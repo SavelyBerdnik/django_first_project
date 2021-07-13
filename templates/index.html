@@ -1,10 +1,10 @@
 {% extends 'base.html' %}  <!-- Наследование шаблона base.html -->
 
 {% block title%}Тайтл Индекс {% endblock %}  <!-- Переопределение шаблона -->
-
+{% load static %}
 {% block content %}
 <h2>Данные из index.html</h2>
-
+<img src="{% static 'img/1.jpg' %}" height="300">
 {% include 'index_old.html' %}  <!-- Подключение другого кода -->
 {% endblock %}  # блок контента, который будет обёрнут в шаблон
 

@@ -1,9 +1,11 @@
+{% load static %} <!-- Подключение папки static -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title%}Тайтл бэйс {% endblock %}</title>
     <!-- Начинка блока отобразиться, если наследник не переопределит его -->
+    <link rel="stylesheet" href="{% static 'style.css' %}"> <!-- Подключение стилей из папки static -->
 </head>
 <body>
 <h1>Шапка</h1>
